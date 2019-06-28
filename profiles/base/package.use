@@ -1,0 +1,8 @@
+>=sys-apps/gptfdisk-1.0.1 -ncurses
+x11-libs/libva-intel-driver hybrid_codec
+sys-kernel/chromeos-kernel-4_4 apply_patches
+sys-kernel/chromeos-kernel-4_14 apply_patches -clang
+chromeos-base/chromeos-chrome chrome_media
+chromeos-base/libchromeos-use-flags highdpi stylus touchview drm_atomic edge_touch_filtering
+sys-kernel/linux-firmware-config intel-common
+sys-kernel/linux-fimware savedconfig
