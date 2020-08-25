@@ -1,2 +1,2 @@
-ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="07e2", RUN+="switch_tablet_mode.sh 0"
-ACTION=="remove", SUBSYSTEMS=="usb", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="07e2", RUN+="switch_tablet_mode.sh 1"
+ACTION=="add", SUBSYSTEMS=="input", ATTRS{name}=="Microsoft Surface Type Cover Keyboard", RUN+="switch_tablet_mode.sh 0"
+ACTION=="remove", SUBSYSTEMS=="input", ATTRS{name}=="Microsoft Surface Type Cover Keyboard", RUN+="switch_tablet_mode.sh 1"

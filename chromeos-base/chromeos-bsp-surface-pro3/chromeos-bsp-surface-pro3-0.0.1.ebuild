@@ -14,6 +14,7 @@ IUSE=""
 RDEPEND="
     chromeos-base/chromeos-accelerometer-init
 	chromeos-base/detachable-emulator
+  chromeos-base/acpi-patch-service
 "
 
 DEPEND="${RDEPEND}"
@@ -34,4 +35,7 @@ src_install() {
 
   exeinto /usr/sbin
   doexe ${FILESDIR}/reloadwifi.sh
+
+  insinto /usr/share/fydeos_acpi
+  doins ${FILESDIR}/acpi_patch/lid2.aml
 }
