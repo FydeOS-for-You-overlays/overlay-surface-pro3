@@ -23,7 +23,7 @@ S=${WORKDIR}
 
 src_install() {
   insinto /etc/modprobe.d
-  doins ${FILESDIR}/mwifiex.conf
+#  doins ${FILESDIR}/mwifiex.conf
 
   insinto /etc/init
   doins ${FILESDIR}/tablet_mode/init-tablet-mode.conf
@@ -34,7 +34,7 @@ src_install() {
   doins ${FILESDIR}/accelmeter/99-cros-ec-accel.rules
 
   exeinto /usr/sbin
-  doexe ${FILESDIR}/reloadwifi.sh
+#  doexe ${FILESDIR}/reloadwifi.sh
 
   insinto /usr/share/fydeos_acpi
   doins ${FILESDIR}/acpi_patch/lid2.aml
