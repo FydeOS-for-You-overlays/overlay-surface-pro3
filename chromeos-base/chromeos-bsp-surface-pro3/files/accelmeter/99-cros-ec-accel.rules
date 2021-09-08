@@ -1,2 +1,2 @@
-ACTION=="add", ATTR{name}=="accel_3d", RUN+="/lib/udev/accelerometer-init.sh %k"
-ACTION!="remove", ATTR{name}=="accel_3d", SYMLINK+="cros-ec-accel/%n", MODE="640", GROUP="chronos"
+ACTION=="add", ATTR{name}=="cros-ec-accel", RUN+="/lib/udev/accelerometer-init.sh %k"
+ACTION!="remove", ATTR{name}=="cros-ec-accel", SYMLINK+="cros-ec-accel/%n", MODE="640", GROUP="chronos"
